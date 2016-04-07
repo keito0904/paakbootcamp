@@ -1,0 +1,89 @@
+#thumblist {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#thumblist ul {
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  padding-left: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#thumblist ul li {
+  text-align: left;
+  float: left;
+  overflow: hidden;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+}
+#thumblist ul li .text{
+  display: none;
+}
+#thumblist ul li.nomal{
+  width: 20%
+}
+#thumblist ul li.medium{
+  width: 25%;
+}
+#thumblist ul li.large{
+  width: 35%;
+}
+#thumblist ul li.large .text{
+  display: block;
+}
+#thumblist ul li img {
+  max-width: 100%;
+}
+
+/* =======================================
+    ClearFixElements
+======================================= */
+#thumblist ul:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+#thumblist ul {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#loading-content{
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  opacity: 1;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+}
+#loading-content img{
+  width: 70px;
+}
+
+@media (max-width: 500px){
+  #thumblist ul li{
+    padding: 5px;
+    font-size: 10px;
+  }
+  #thumblist ul li.nomal{
+    width: 50%
+  }
+  #thumblist ul li.medium{
+    width: 50%;
+  }
+  #thumblist ul li.large{
+    width: 50%;
+  }
+  #thumblist ul li.large .text{
+    display: none;
+  }
+}

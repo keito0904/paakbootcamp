@@ -1,0 +1,63 @@
+.main-content{
+  padding: 30px 0px;
+}
+
+.voice-content{
+  width: 700px;
+  margin: 0 auto;
+}
+.voice-user .media-left{
+  width: 200px;
+}
+.voice-user .media-left img{
+  width: 100%;
+}
+.voice-user .media-body{
+  padding-left: 20px;
+  vertical-align: bottom;
+}
+.voice-user .media-body .name{
+  font-size: 20px;
+  font-weight: 600;
+  color: #0B5F32;
+  border-left: 6px solid;
+  padding: 2px 10px;
+}
+.voice-user .media-body .career{
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.interview{
+  margin-top: 25px;
+  margin-bottom: 80px;
+}
+.interview .interview-head{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.interview .comment + .interview-head{
+  margin-top: 30px;
+}
+.interview .comment{
+  line-height: 1.7;
+}
+
+@media(max-width: 700px){
+  .voice-content{
+    width: 100%;
+  }
+  .voice-user .media-left{
+    width: 100px;
+  }
+  .voice-user .media-body{
+    padding-left: 10px;
+  }
+  .voice-user .media-body .name{
+    font-size: 18px;
+  }
+  .voice-user .media-body .career{
+    font-size: 14px;
+  }
+}
